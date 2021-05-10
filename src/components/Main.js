@@ -7,6 +7,7 @@ import DateTime from "./DateTime";
 import TagLine from "./TagLine";
 import WeatherSearch from "./WeatherSearch";
 import Error from './Error';
+import Footer from './Footer';
 
 import Context from '../Context';
 import WeatherData from './WeatherData';
@@ -41,9 +42,8 @@ const Main = () => {
                     <WeatherSearch />
                     {weather && <WeatherData />}
                     {error && <Error/>}
-
                 </Context.Provider>
-
+                <Footer/>
             </Content>
         </div>
     )
