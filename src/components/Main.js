@@ -34,16 +34,12 @@ const Main = () => {
 
     return (
         <div className="main">
-            <Header />
             <Content>
                 <DateTime />
-                <TagLine />
                 <Context.Provider value={{ api_call, weather, city, error}}>
-                    <WeatherSearch />
                     {weather && <WeatherData />}
                     {error && <Error/>}
                 </Context.Provider>
-                <Footer/>
             </Content>
         </div>
     )
