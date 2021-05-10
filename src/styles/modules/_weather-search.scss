@@ -1,20 +1,21 @@
 .weather-search {
 
     &__form {
-      text-align: center;
-      margin-top: 3rem;
-      margin-bottom: 5rem;
+      text-align: left;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
     }
   
     &__input {
       display: inline-block;
-      border: solid 2px transparent;
+      border: solid 2px white;
       background-color: rgba($colour-2, 0.1);
       padding: 0.5rem 3rem;
-      border-radius: 2px;
-      margin-right: 2rem;
-      padding-left: 1rem;
-      padding-right: 4rem;
+      border-radius: 4px;
+      margin-right: 1rem;
+      padding-left: 4rem;
+      padding-right: 1rem;
+      width: 20rem;
   
       &:focus {
         outline: none;

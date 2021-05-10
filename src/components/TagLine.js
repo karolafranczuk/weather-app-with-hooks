@@ -2,7 +2,7 @@ import React from 'react';
 
 const TagLine = () => (
     <div className="tagline">
-        <p>Enter to name of the city to get started</p>
+        <p className="tagline__paragraph">Enter to name of the city:</p>
     </div>
 )
 
