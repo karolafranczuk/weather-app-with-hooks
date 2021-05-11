@@ -9,9 +9,9 @@ const WeatherSearch = () => {
     return (
         <div className="weather-search">
             <form onSubmit={api_call} className="weather-search__form">
-                <input name="location" autoComplete="off" className="weather-search__form" type="text"/>
+                <input name="location" autoComplete="off" className="weather-search__input" type="text"/>
                 <div className="weather-search__submit">
-                    <button className="weather-search__button">&#8702;</button>
+                    <button className="weather-search__button">submit</button>
                 </div>
             </form>
         </div>    
