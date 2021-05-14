@@ -4,7 +4,8 @@ import Context from '../Context';
 
 const WeatherSearch = () => {
 
-    const {api_call} = useContext(Context);
+    const {api_call, weather} = useContext(Context);
+    console.log({api_call, weather});
 
     return (
         <div className="weather-search">

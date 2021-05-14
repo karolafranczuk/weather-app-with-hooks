@@ -20,10 +20,8 @@ const Main = () => {
         <div className="main">
             <Content>
                 <DateTime />
-                <Context.Provider>
-                    <WeatherData />
-                    <Error/>
-                </Context.Provider>
+                <WeatherData />
+                <Error/>
             </Content>
         </div>
     )

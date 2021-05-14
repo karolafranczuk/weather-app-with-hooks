@@ -3,10 +3,7 @@ import React, {useContext} from 'react';
 import Context from '../Context';
 
 const WeatherData = () => {
-    const {weather, city} = useContext(Context);
-    const {temp, humidity, pressure} = weather;
-
-    console.log(weather)
+    const {temp, humidity, pressure, city} = useContext(Context);
     return (
         <div className="weather-data">
         <p className="weather__tagline">Weather forecast for <span className="weather-data__city">{city}</span></p>

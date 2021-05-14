@@ -14,6 +14,9 @@ const AppContainer = () => {
     const [weather, setWeather] = useState();
     const [city, setCity] = useState();
     const [error, setError] = useState();
+    const [temp, setTemp] = useState();
+    const [humidity, setHumidity] = useState();
+    const [pressure, setPressure] = useState();
 
     const api_call = async e => {
         e.preventDefault();
@@ -24,6 +27,9 @@ const AppContainer = () => {
         const request = axios.get(url);
         const response = await request;
         setWeather(response.data.main);
+        setTemp(response.data.main.temp);
+        setHumidity(response.data.main.humidity);
+        setPressure(response.data.main.pressure)
         setCity(response.data.name);
         setError(null);  
         console.log(weather);     
@@ -31,9 +37,9 @@ const AppContainer = () => {
 
     return (
         <>
-        <Context.Provider value={{ api_call, weather, city, error}}>
+        <Context.Provider value={{ api_call, temp, humidity, pressure, city, error}}>
             <MainSearchPane />
-           
+            <Main />
         </Context.Provider>
             <Footer />
         </>
